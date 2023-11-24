@@ -1,0 +1,54 @@
+###
+GET http://localhost:8866/auth
+Content-Type: application/json
+
+{
+  "username": "rodrigo",
+  "senha": "123456"
+}
+
+###
+GET http://localhost:8866/busca-medico
+
+###
+GET http://localhost:8866/lista-medicos
+
+
+###
+POST http://localhost:8866/cadastra-medico
+Content-Type: application/json
+
+{
+    "nome": "Rodrigo",
+    "crm": "1234567",
+    "idUsuario": 1
+}
+
+###
+POST http://localhost:8866/cadastra-medico
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "crm": "7777777",
+    "idUsuario": 2
+}
+
+###
+PUT http://localhost:8866/atualiza-medico
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Rodrigooooo",
+  "crm": "1111111",
+  "idUsuario": 1
+}
+
+###
+DELETE http://localhost:8866/remove-medico
+Content-Type: application/json
+
+{
+  "id": 1
+}
