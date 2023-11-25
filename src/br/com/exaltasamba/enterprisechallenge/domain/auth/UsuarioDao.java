@@ -7,6 +7,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * A classe `UsuarioDao` representa a implementação de um Data Access Object (DAO) para a entidade "Usuario". Este design
+ * pattern é utilizado para encapsular o acesso a dados relacionados à entidade, fornecendo uma interface simples e
+ * independente do banco de dados para operações CRUD (Create, Read, Update, Delete).
+ */
 public class UsuarioDao {
 
     public Usuario findByUsername(String username) {

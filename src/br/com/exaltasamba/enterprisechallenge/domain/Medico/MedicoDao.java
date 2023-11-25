@@ -9,6 +9,37 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A classe `MedicoDao` representa a implementação de um Data Access Object (DAO) para a entidade "Medico". Este design
+ * pattern é utilizado para encapsular o acesso a dados relacionados à entidade, fornecendo uma interface simples e
+ * independente do banco de dados para operações CRUD (Create, Read, Update, Delete).
+ *
+ * ## Utilização do MedicoDao:
+ * Para usar a classe `MedicoDao` e aproveitar os benefícios do design pattern DAO, siga os seguintes passos:
+ *
+ * 1. **Criação de Instância:**
+ *    ```java
+ *    MedicoDao medicoDao = new MedicoDao();
+ *    ```
+ *
+ * 2. **Inserção de Médico:**
+ *    Utilize o método `insereMedico` para adicionar um novo médico ao banco de dados.
+ *
+ * 3. **Recuperação de Médico por ID:**
+ *    Utilize o método `buscaMedicoPorId` para recuperar um médico específico com base no ID.
+ *
+ * 4. **Atualização de Médico:**
+ *    Utilize o método `atualizaMedico` para modificar informações de um médico existente.
+ *     *
+ * 5. **Remoção de Médico:**
+ *    Utilize o método `excluiMedico` para excluir um médico do banco de dados.
+ *
+ *
+ * O design pattern DAO ajuda a manter o código mais puro e independente do banco de dados, proporcionando uma
+ * abstração que facilita a troca de implementações de armazenamento de dados sem impactar o restante do código. Além
+ * disso, ele promove a separação de responsabilidades, simplificando a manutenção e testabilidade do sistema.
+ */
+
 public class MedicoDao {
 
     private static final String LISTA_MEDICOS = "SELECT * FROM medico";

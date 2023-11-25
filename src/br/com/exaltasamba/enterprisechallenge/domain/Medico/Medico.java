@@ -1,5 +1,25 @@
 package br.com.exaltasamba.enterprisechallenge.domain.Medico;
 
+/**
+ * A classe `Medico` representa a entidade médico no sistema, contendo informações essenciais como nome, CRM (Conselho
+ * Regional de Medicina) e idUsuario. Neste contexto, a restrição de tempo para a entrega do projeto influenciou na
+ * decisão de manter a classe de forma enxuta, focando apenas nos atributos fundamentais para a funcionalidade
+ * imediata do sistema.
+ *
+ * ## Atributos:
+ * - `nome`: Uma string que armazena o nome do médico.
+ * - `crm`: Uma string que representa o número do CRM do médico.
+ * - `idUsuario`: Um identificador associado ao médico no sistema.
+ *
+ * A decisão de manter a classe simplificada se deve à necessidade de atender às demandas do projeto dentro de um
+ * cronograma restrito. Ao se concentrar nos atributos cruciais para as operações básicas do sistema, como inserção e
+ * recuperação de médicos, busca-se otimizar o tempo disponível, priorizando a entrega funcional do projeto.
+ *
+ * Vale ressaltar que, embora a classe esteja enxuta, é importante considerar futuras expansões e requisitos do
+ * sistema. A modularidade e a flexibilidade devem ser mantidas para facilitar ajustes e adições no código conforme
+ * necessário.
+ */
+
 public class Medico {
 
     private int id;

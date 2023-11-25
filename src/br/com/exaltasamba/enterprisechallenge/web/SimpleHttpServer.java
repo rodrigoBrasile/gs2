@@ -86,6 +86,16 @@ public class SimpleHttpServer {
         return buf.toString();
     }
 
+    /**
+     * A classe `JsonResponse` oferece uma abordagem simples e eficaz para gerar respostas em formato JSON sem depender de um
+     * framework específico. Essa solução é útil em ambientes onde a utilização de um framework para manipulação de JSON
+     * pode ser excessiva ou impraticável.
+     *
+     * A classe `JsonResponse` proporciona uma alternativa leve e direta para a geração de respostas em JSON, eliminando a
+     * necessidade de depender de frameworks adicionais. Essa abordagem é especialmente útil em contextos nos quais a
+     * simplicidade e a flexibilidade são prioritárias.
+     */
+
     private static void sendJsonResponse(HttpExchange exchange, String response) throws IOException {
         sendJsonResponse(exchange, response, 200);
     }
